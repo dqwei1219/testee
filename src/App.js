@@ -5,6 +5,7 @@ import React, { useEffect } from "react";
 const API_URL = "http://www.omdbapi.com?apikey=362b4302";
 
 const App = () => {
+  const check = "check";
 
   const searchMovies = async (title) => {
     const response = await fetch(`${API_URL}&s=${title}`);
